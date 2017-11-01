@@ -45,7 +45,7 @@ namespace WebComponentsManager {
       delete this.attributeChangedCallback;
 
       Utils.timeoutPromise<void>(Utils.timeoutDuration, this[Base.loader]())
-        .catch(console.error.bind(null, "Error from '%s': %o", this.for || this.path));
+        .catch(console.error.bind(null, "Error from '%s': %o", this.for, this.path));
     }
 
   }
